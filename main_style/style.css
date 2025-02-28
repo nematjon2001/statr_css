@@ -1,6 +1,4 @@
 
-@import url(./fonts.css);
-
 
 /* reset css yoki defout qiymatlarni chopish */
 *{
@@ -9,3 +7,31 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1440px;  /* Maksimal kenglik */
+    margin: 0 auto;  /* Markazga joylash */
+    padding: 20px;  /* Ichki bo'shliq */
+    background: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Yengil soya */
+    border-radius: 8px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+section {
+    height: 600px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
