@@ -1,0 +1,11 @@
+
+@import url(./fonts.css);
+
+
+/* reset css yoki defout qiymatlarni chopish */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
