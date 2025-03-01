@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* reset css yoki defout qiymatlarni chopish */
 *{
@@ -8,30 +9,144 @@
 }
 
 .container {
+    height: 1500px;
     max-width: 1440px;  /* Maksimal kenglik */
     margin: 0 auto;  /* Markazga joylash */
-    padding: 20px;  /* Ichki bo'shliq */
     background: #fff; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Yengil soya */
-    border-radius: 8px;
+} 
+
+.bg_img {
+    position: absolute;
 }
 
-header ul{
-    list-style: none;
+.navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1110px;
+    height: 39px;
+    top: 64px;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
 }
 
-a{
-    text-decoration: none;
-}
-
-section {
-    height: 600px;
-}
-
-img {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ul_nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav_li {
+    list-style: none;
+}
+
+.nav_li_a {
+    font-family: "Josefin Sans";
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    transition: color 0.5s ease;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav_li_a:hover {
+    color: aqua;
+}
+
+.nav_li_a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    display: inline-block;
+    height: 4px;
+    background-color: rgba(200, 255, 0, 0.774);
+    width: 0;
+    border-radius: 20px;
+    transition: width 0.5s ease;
+}
+
+.nav_li_a:hover:after {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 226px;
+    left: 165px;
+    width: 650px;
+    height: 278px;
+    border: 2px solid #cfd4df;
+}
+
+.main_tex {
+    width: 570px;
+    height: 198px;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.main_img {
+    position:relative;
+    top: 493px;
+    width: 1111px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.main_images {
+    position: absolute;
+}
+
+.box {
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #FFFFFF;
+    width: 541px;
+    height: 317px;
+}
+
+.box_h2 {
+    position: absolute;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+    width: 455px;
+    height: 96px;
+    right: 0px;
+    top: 96px;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    position: absolute;
+    width: 455px;
+    height: 100px;
+    bottom: 0px;
+    right: 0px;
 }
